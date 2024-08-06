@@ -29,6 +29,10 @@ public class Resource {
             throw new IllegalArgumentException("자원이 부족합니다.");
         }
 
+        if(items.get(itemName)==0){ //자원의 갯수가 없으면 없애기
+            items.remove(itemName);
+        }
+
         items.put(itemName, items.get(itemName)-amountValue);
 
         getResource();
