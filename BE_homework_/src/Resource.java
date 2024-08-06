@@ -41,7 +41,7 @@ public class Resource {
 
     void getResource(){
         for(String key : items.keySet()){
-            System.out.println("\t - " + key + ": " + items.get(key));
+            System.out.println("\t\t - " + key + ": " + items.get(key));
         }
         System.out.println();
     }
